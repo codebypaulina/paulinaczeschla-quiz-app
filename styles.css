@@ -1,10 +1,5 @@
-body {
-  font-family: Arial, sans-serif;
-}
-
-header {
-}
-
-body header h1 {
-  text-align: center;
-}
+@import "/global.css";
+@import "/components/header.css";
+@import "/components/navigation.css";
+@import "/components/button.css";
+@import "/components/card.css";

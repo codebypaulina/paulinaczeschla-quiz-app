@@ -12,8 +12,56 @@
       <h1>Quiz App</h1>
     </header>
 
-    <main>
-      <!-- INHALT -->
+    <main role="main">
+      <!----------- QUESTION CONTAINER ----------->
+      <section class="question-container">
+        <!----------- QUESTION CARDS LIST ----------->
+        <ul class="cards">
+          <!----------- CARD 1 ----------->
+          <li class="card">
+            <button class="bookmark" aria-label="bookmark this question">
+              <img src="./img/bookmark.png" alt="bookmark icon" />
+            </button>
+
+            <h3 class="card-question">
+              Das soll aussehen wie die erste Frage?
+            </h3>
+            <button
+              class="button button--show-answer"
+              role="button"
+              aria-label="Show Answer"
+            >
+              Show Answer
+            </button>
+            <p class="card-answer">Hier soll die Lösung stehen.</p>
+            <ul class="categories">
+              <li>#eins</li>
+              <li>#zwei</li>
+              <li>#drei</li>
+            </ul>
+          </li>
+
+          <!----------- CARD 2 ----------->
+          <li class="card">
+            <h3 class="card-question">
+              Das soll aussehen wie die erste Frage?
+            </h3>
+            <button
+              class="button button--show-answer"
+              role="button"
+              aria-label="Show Answer"
+            >
+              Show Answer
+            </button>
+            <p class="card-answer">Hier soll die Lösung stehen.</p>
+            <ul class="categories">
+              <li>1. Kategorie</li>
+              <li>2. Kategorie</li>
+              <li>3. Kategorie</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer>

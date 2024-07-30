@@ -1,0 +1,6 @@
+.button--show-answer {
+  border: solid 1px;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 0.8rem;
+}
