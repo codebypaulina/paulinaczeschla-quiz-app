@@ -33,7 +33,7 @@
             >
               Show Answer
             </button>
-            <p class="card-answer">Hier soll die Lösung stehen.</p>
+            <p class="card-answer hidden">Hier soll die Lösung stehen.</p>
             <ul class="categories">
               <li>#eins</li>
               <li>#zwei</li>
@@ -43,6 +43,10 @@
 
           <!----------- CARD 2 ----------->
           <li class="card">
+            <button class="bookmark" aria-label="bookmark this question">
+              <img src="./img/bookmark.png" alt="bookmark icon" />
+            </button>
+
             <h3 class="card-question">
               Das soll aussehen wie die erste Frage?
             </h3>
@@ -55,18 +59,43 @@
             </button>
             <p class="card-answer">Hier soll die Lösung stehen.</p>
             <ul class="categories">
-              <li>1. Kategorie</li>
-              <li>2. Kategorie</li>
-              <li>3. Kategorie</li>
+              <li>#eins</li>
+              <li>#zwei</li>
+              <li>#drei</li>
             </ul>
           </li>
+
+          <!----------- CARD 3 ----------->
+          <!----------- CARD 4 ----------->
+          <!----------- CARD 5 ----------->
+          <!----------- CARD 6 ----------->
+          <!----------- CARD 7 ----------->
+          <!----------- CARD 8 ----------->
+          <!----------- CARD 9 ----------->
+          <!----------- CARD 10 ----------->
         </ul>
       </section>
     </main>
 
-    <footer>
-      <nav>
-        <!-- INHALT -->
+    <footer class="footer" role="footer">
+      <nav class="footer-nav" role="navigation">
+        <ul>
+          <li><img src="./img/home_filled.png" alt="home icon" /></li>
+          <li>
+            <img
+              src="./img/bookmark_transparent.png"
+              alt="bookmark icon"
+              role="swich to bookmarks"
+            />
+          </li>
+          <li>
+            <img
+              src="./img/profile.png"
+              alt="profile icon"
+              role="switch to profile"
+            />
+          </li>
+        </ul>
       </nav>
     </footer>
 

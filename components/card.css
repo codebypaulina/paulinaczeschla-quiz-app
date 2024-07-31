@@ -13,6 +13,7 @@
 .card {
   list-style-type: none;
   border: solid 1px;
+  border-radius: 15px;
   padding: 20px;
   margin-bottom: 20px;
   position: relative;
@@ -26,7 +27,7 @@
   border: none;
   position: absolute;
   top: -8px;
-  right: -1px;
+  right: 7px;
   cursor: pointer;
 }
 
@@ -45,21 +46,26 @@
 
 .card-answer {
   margin-top: 30px;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 
-.categories {
+.card .categories {
   list-style-type: none;
   display: flex;
-  justify-content: left;
-  padding: 0;
+  justify-content: flex-start;
+  padding: 0px 10px 0 5px;
   margin: 0;
+  flex-wrap: wrap;
 }
 
 .categories li {
-  margin: 0 5px;
+  margin-right: 6px;
   border: solid 1px;
   border-radius: 10px;
-  padding: 3px 9px;
+  padding: 5px 10px;
   font-size: 0.8rem;
+}
+
+.hidden {
+  display: none;
 }
