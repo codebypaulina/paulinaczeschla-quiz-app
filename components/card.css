@@ -1,13 +1,21 @@
 .question-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
 }
 
 .cards {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
@@ -15,11 +23,12 @@
   border: solid 1px;
   border-radius: 15px;
   padding: 20px;
-  margin-bottom: 20px;
+  margin: 0 10px 20px 10px;
   position: relative;
   text-align: center;
-  max-width: 600px;
   width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
 }
 
 .card .bookmark {
@@ -60,6 +69,7 @@
 
 .categories li {
   margin-right: 6px;
+  margin-bottom: 4px;
   border: solid 1px;
   border-radius: 10px;
   padding: 5px 10px;
