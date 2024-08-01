@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz App: Bookmarks</title>
+    <title>Quiz App | Bookmarks</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -13,11 +13,65 @@
     </header>
 
     <main role="main">
+      <div class="h2-container">
+        <h2>BOOKMARKED QUESTIONS</h2>
+      </div>
+
       <!----------- BOOKMARKED QUESTION CARDS CONTAINER ----------->
       <section class="question-container">
         <!----------- BOOKMARKED QUESTION CARDS LIST ----------->
         <ul class="cards">
-          <!-- Hier sollen die bookmarks hinzugefügt werden -->
+          <!-- BOOKMARKED CARD 1 -->
+          <li class="card">
+            <button class="bookmark" aria-label="bookmark this question">
+              <img src="./img/bookmark_filled.png" alt="bookmark icon" />
+            </button>
+
+            <h3 class="card-question">
+              Which HTML tag is used to link an external CSS file to an HTML
+              document?
+            </h3>
+            <button
+              class="button button--show-answer"
+              role="button"
+              aria-label="Show Answer"
+            >
+              Show Answer
+            </button>
+            <p class="card-answer">< link ></p>
+            <ul class="categories">
+              <li>#html</li>
+              <li>#css</li>
+              <li>#web development</li>
+            </ul>
+          </li>
+
+          <!-- BOOKMARKED CARD 2 -->
+          <li class="card">
+            <button class="bookmark" aria-label="bookmark this question">
+              <img src="./img/bookmark_filled.png" alt="bookmark icon" />
+            </button>
+
+            <h3 class="card-question">
+              What is the purpose of the HTML < div > element?
+            </h3>
+            <button
+              class="button button--show-answer"
+              role="button"
+              aria-label="Show Answer"
+            >
+              Show Answer
+            </button>
+            <p class="card-answer">
+              It is a container element used to group and style content
+              together.
+            </p>
+            <ul class="categories">
+              <li>#html</li>
+              <li>#page layout</li>
+              <li>#web design</li>
+            </ul>
+          </li>
         </ul>
       </section>
     </main>
