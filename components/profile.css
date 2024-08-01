@@ -1,0 +1,146 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px 20px 20px 20px;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid lightcoral;
+  margin-bottom: 0px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: lightcoral;
+}
+
+.about-me {
+  text-align: left;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid whitesmoke;
+  border-radius: 13px;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.1);
+  color: #666666;
+  font-weight: 500;
+}
+
+.about-me h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  border-bottom: 1px solid lightcoral;
+  padding-bottom: 15px;
+}
+
+.profile-description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.status {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 600px;
+  padding: 0;
+  margin: 40px 0 40px 0;
+}
+
+.status li {
+  display: flex;
+  align-items: center;
+}
+
+.status .icon-questions img {
+  width: 60px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.status .icon-bookmarks img {
+  width: 47px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.status span {
+  font-size: 18px;
+  font-weight: bold;
+  color: lightcoral;
+  margin-right: 40px;
+}
+
+.settings {
+  text-align: left;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  color: #666666;
+  font-weight: 500;
+}
+
+.settings h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  border-bottom: 1px solid lightcoral;
+  padding-bottom: 15px;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.switch input[type="checkbox"] {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  width: 34px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 34px;
+  cursor: pointer;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: lightcoral;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
