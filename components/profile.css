@@ -84,7 +84,9 @@ h2 {
   margin-right: 40px;
 }
 
-.settings {
+.settings-container {
+  display: flex;
+  flex-direction: column;
   text-align: left;
   width: 100%;
   max-width: 600px;
@@ -98,49 +100,52 @@ h2 {
   font-weight: 500;
 }
 
-.settings h3 {
+.settings-container h3 {
   margin-top: 0;
   margin-bottom: 15px;
   font-size: 20px;
   border-bottom: 1px solid lightcoral;
+  width: 100%;
   padding-bottom: 15px;
 }
 
-.switch {
+.settings-dark-mode-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
 }
 
-.switch input[type="checkbox"] {
-  display: none;
+.settings-dark-mode-container p {
+  margin: 0;
 }
 
-.slider {
-  position: relative;
-  width: 34px;
-  height: 20px;
-  background-color: #ccc;
-  border-radius: 34px;
+.button-dark-mode {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 24px;
+  background-color: lightgrey;
+  border: none;
+  border-radius: 20px;
   cursor: pointer;
+  position: relative;
 }
 
-.slider:before {
+.button-dark-mode .slider {
   position: absolute;
-  content: "";
-  height: 12px;
-  width: 12px;
-  left: 4px;
-  bottom: 4px;
-  background-color: whitesmoke;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
+  background-color: whitesmoke;
+  cursor: pointer;
+  left: 6px;
 }
 
-input:checked + .slider {
+.button-dark-mode.active {
   background-color: lightcoral;
 }
 
-input:checked + .slider:before {
-  transform: translateX(14px);
+.button-dark-mode .slider.active {
+  left: 28px;
+  background-color: whitesmoke;
 }

@@ -12,6 +12,11 @@ body {
   overflow-x: hidden;
 }
 
+body.dark {
+  background-color: rgb(37, 37, 37);
+  color: whitesmoke;
+}
+
 main {
   margin-top: 90px;
   margin-bottom: 45px;
