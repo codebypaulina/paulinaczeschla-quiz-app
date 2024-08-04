@@ -1,0 +1,29 @@
+.button--show-answer {
+  border: solid 1px lightgrey;
+  border-radius: 13px;
+  padding: 10px 14px;
+  font-size: 0.8rem;
+  font-weight: 650;
+  cursor: pointer;
+  margin-bottom: 30px;
+  background-color: lightgray;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.button--show-answer:hover {
+  background-color: lightcoral;
+  color: whitesmoke;
+}
+
+.card-answer {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button--show-answer:focus + .card-answer {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 10px;
+}

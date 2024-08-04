@@ -3,10 +3,302 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz App</title>
+    <title>Quiz App | Home</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <!-- INHALT -->
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+
+    <main role="main">
+      <div class="h2-container">
+        <h2>QUESTION CARDS</h2>
+      </div>
+
+      <!----------- QUESTION CARDS CONTAINER ----------->
+      <section class="question-container">
+        <!----------- QUESTION CARDS LIST ----------->
+        <ul class="cards">
+          <!----------- CARD 1 ----------->
+          <li class="card">
+            <button class="bookmark" aria-label="bookmark this question">
+              <img src="./img/bookmark.png" alt="bookmark icon" />
+            </button>
+
+            <h3 class="card-question">What does CSS stand for?</h3>
+            <button
+              class="button button--show-answer"
+              role="button"
+              aria-label="Show Answer"
+            >
+              Show Answer
+            </button>
+            <p class="card-answer hidden">Cascading Style Sheets</p>
+            <ul class="categories">
+              <li>#css</li>
+              <li>#web design</li>
+              <li>#programming</li>
+            </ul>
+          </li>
+
+          <!----------- CARD 2: BOOKMARKED ----------->
+          <li class="card">
+            <button class="bookmark" aria-label="bookmark this question">
+              <img src="./img/bookmark_filled.png" alt="bookmark icon" />
+            </button>
+
+            <h3 class="card-question">
+              Which HTML tag is used to link an external CSS file to an HTML
+              document?
+            </h3>
+            <button
+              class="button button--show-answer"
+              role="button"
+              aria-label="Show Answer"
+            >
+              Show Answer
+            </button>
+            <p class="card-answer">< link ></p>
+            <ul class="categories">
+              <li>#html</li>
+              <li>#css</li>
+              <li>#web development</li>
+            </ul>
+          </li>
+
+          <!----------- CARD 3: BOOKMARKED ----------->
+          <li class="card">
+            <button class="bookmark" aria-label="bookmark this question">
+              <img src="./img/bookmark_filled.png" alt="bookmark icon" />
+            </button>
+
+            <h3 class="card-question">
+              What is the purpose of the HTML < div > element?
+            </h3>
+            <button
+              class="button button--show-answer"
+              role="button"
+              aria-label="Show Answer"
+            >
+              Show Answer
+            </button>
+            <p class="card-answer">
+              It is a container element used to group and style content
+              together.
+            </p>
+            <ul class="categories">
+              <li>#html</li>
+              <li>#page layout</li>
+              <li>#web design</li>
+            </ul>
+          </li>
+
+          <!----------- CARD 4 ----------->
+          <li class="card">
+            <button class="bookmark" aria-label="bookmark this question">
+              <img src="./img/bookmark.png" alt="bookmark icon" />
+            </button>
+
+            <h3 class="card-question">
+              Which CSS property is used to change the text color of an element?
+            </h3>
+            <button
+              class="button button--show-answer"
+              role="button"
+              aria-label="Show Answer"
+            >
+              Show Answer
+            </button>
+            <p class="card-answer">color</p>
+            <ul class="categories">
+              <li>#css</li>
+              <li>#styling</li>
+              <li>#web development</li>
+            </ul>
+          </li>
+
+          <!----------- CARD 5 ----------->
+          <li class="card">
+            <button class="bookmark" aria-label="bookmark this question">
+              <img src="./img/bookmark.png" alt="bookmark icon" />
+            </button>
+
+            <h3 class="card-question">
+              What is the default display property for most HTML elements?
+            </h3>
+            <button
+              class="button button--show-answer"
+              role="button"
+              aria-label="Show Answer"
+            >
+              Show Answer
+            </button>
+            <p class="card-answer">block</p>
+            <ul class="categories">
+              <li>#html</li>
+              <li>#elements</li>
+              <li>#default</li>
+            </ul>
+          </li>
+
+          <!----------- CARD 6 ----------->
+          <li class="card">
+            <button class="bookmark" aria-label="bookmark this question">
+              <img src="./img/bookmark.png" alt="bookmark icon" />
+            </button>
+
+            <h3 class="card-question">
+              How can you center an element horizontally in CSS?
+            </h3>
+            <button
+              class="button button--show-answer"
+              role="button"
+              aria-label="Show Answer"
+            >
+              Show Answer
+            </button>
+            <p class="card-answer">By setting its margin property to auto.</p>
+            <ul class="categories">
+              <li>#css</li>
+              <li>#positioning</li>
+              <li>#center</li>
+            </ul>
+          </li>
+
+          <!----------- CARD 7 ----------->
+          <li class="card">
+            <button class="bookmark" aria-label="bookmark this question">
+              <img src="./img/bookmark.png" alt="bookmark icon" />
+            </button>
+
+            <h3 class="card-question">
+              What is the CSS pseudo-class used to select the first child of an
+              element?
+            </h3>
+            <button
+              class="button button--show-answer"
+              role="button"
+              aria-label="Show Answer"
+            >
+              Show Answer
+            </button>
+            <p class="card-answer">:first-child</p>
+            <ul class="categories">
+              <li>#css</li>
+              <li>#pseudo-class</li>
+              <li>#child</li>
+            </ul>
+          </li>
+
+          <!----------- CARD 8 ----------->
+          <li class="card">
+            <button class="bookmark" aria-label="bookmark this question">
+              <img src="./img/bookmark.png" alt="bookmark icon" />
+            </button>
+
+            <h3 class="card-question">
+              Which HTML tag is used to create an ordered (numbered) list?
+            </h3>
+            <button
+              class="button button--show-answer"
+              role="button"
+              aria-label="Show Answer"
+            >
+              Show Answer
+            </button>
+            <p class="card-answer">< ol ></p>
+            <ul class="categories">
+              <li>#html</li>
+              <li>#element</li>
+              <li>#list</li>
+            </ul>
+          </li>
+
+          <!----------- CARD 9 ----------->
+          <li class="card">
+            <button class="bookmark" aria-label="bookmark this question">
+              <img src="./img/bookmark.png" alt="bookmark icon" />
+            </button>
+
+            <h3 class="card-question">
+              In CSS, what property is used to control the spacing between lines
+              of text within an element?
+            </h3>
+            <button
+              class="button button--show-answer"
+              role="button"
+              aria-label="Show Answer"
+            >
+              Show Answer
+            </button>
+            <p class="card-answer">line-height</p>
+            <ul class="categories">
+              <li>#css</li>
+              <li>#spacing</li>
+              <li>#typography</li>
+            </ul>
+          </li>
+
+          <!----------- CARD 10 ----------->
+          <li class="card">
+            <button class="bookmark" aria-label="bookmark this question">
+              <img src="./img/bookmark.png" alt="bookmark icon" />
+            </button>
+
+            <h3 class="card-question">
+              What does the term "responsive web design" refer to?
+            </h3>
+            <button
+              class="button button--show-answer"
+              role="button"
+              aria-label="Show Answer"
+            >
+              Show Answer
+            </button>
+            <p class="card-answer">
+              It refers to designing web pages that adapt and display well on
+              various screen sizes and devices.
+            </p>
+            <ul class="categories">
+              <li>#responsive</li>
+              <li>#web design principles</li>
+              <li>#ux</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer" role="footer">
+      <nav class="footer-nav" role="navigation">
+        <ul>
+          <li>
+            <a href="index.html"
+              ><img src="./img/home_filled.png" alt="home icon" role="home"
+            /></a>
+          </li>
+          <li>
+            <a href="bookmarks.html">
+              <img
+                src="./img/bookmark_transparent.png"
+                alt="bookmark icon"
+                role="bookmarks"
+                aria-label="switch to bookmarks"
+            /></a>
+          </li>
+          <li>
+            <a href="profile.html">
+              <img
+                src="./img/profile.png"
+                alt="profile icon"
+                role="profile"
+                aria-label="switch to profile"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>

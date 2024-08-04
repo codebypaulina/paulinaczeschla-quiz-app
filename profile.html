@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App | Profile</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+
+    <main role="main">
+      <!-------------- PROFILE CONTAINER -------------->
+      <section class="profile-container">
+        <!-------------- PROFILE PIC -------------->
+        <img
+          src="https://avatars.githubusercontent.com/u/176080341?s=400&u=ce95baab95120eaeb73336f98defe574d1725e9a&v=4"
+          alt="profile picture"
+          class="profile-picture"
+          aria-label="profile picture"
+        />
+        <!--------------  NAME -------------->
+        <h2>Paulina Czeschla</h2>
+        <!-------------- ABOUT ME -------------->
+        <div class="about-me">
+          <h3>About me</h3>
+          <p class="profile-description" aria-label="description about me">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Necessitatibus repellendus illo at cumque dolores qui architecto
+            deleniti officia voluptatibus, error quisquam dolorum debitis eius
+            est explicabo totam? Ad, quaerat perspiciatis!
+          </p>
+        </div>
+
+        <!-------------- STATUS CONTAINER -------------->
+        <ul class="status">
+          <li class="icon-questions">
+            <img
+              src="./img/question.png"
+              alt="answered questions"
+              aria-label="answered questions"
+            />
+            <span>8</span>
+          </li>
+
+          <li class="icon-bookmarks">
+            <img
+              src="./img/bookmark_filled.png"
+              alt="bookmarked questions"
+              aria-label="bookmarked questions"
+            />
+            <span>2</span>
+          </li>
+        </ul>
+
+        <!-------------- SETTINGS CONTAINER -------------->
+        <div class="settings">
+          <h3>Settings</h3>
+          <label class="switch">
+            <span>Dark Mode</span>
+            <input type="checkbox" id="dark-mode-toggle" />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="footer">
+      <nav class="footer-nav" role="navigation">
+        <ul>
+          <li>
+            <a href="index.html"
+              ><img
+                src="./img/home.png"
+                alt="home icon"
+                role="home"
+                aria-label="switch to home"
+            /></a>
+          </li>
+          <li>
+            <a href="bookmarks.html">
+              <img
+                src="./img/bookmark_transparent.png"
+                alt="bookmark icon"
+                role="bookmarks"
+                aria-label="switch to bookmarks"
+            /></a>
+          </li>
+          <li>
+            <a href="profile.html">
+              <img
+                src="./img/profile_filled.png"
+                alt="profile icon"
+                role="profile"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

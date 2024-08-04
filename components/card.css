@@ -1,0 +1,90 @@
+.question-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.cards {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  list-style-type: none;
+  border: solid 1px #666666;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 0 10px 20px 10px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.1);
+  flex: 1 1 auto;
+}
+
+.card .bookmark {
+  background: none;
+  border: none;
+  position: absolute;
+  top: -8px;
+  right: 7px;
+  cursor: pointer;
+}
+
+.card .bookmark img {
+  width: 30px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.card-question {
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  color: #666666;
+}
+
+.card-answer {
+  margin-top: 30px;
+  padding-bottom: 25px;
+  color: #666666;
+  font-weight: 500;
+}
+
+.card .categories {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px 10px 0 5px;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.categories li {
+  margin-right: 6px;
+  margin-bottom: 4px;
+  border: solid 0.5px black;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  background-color: black;
+  color: lightcoral;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+  display: none;
+}
