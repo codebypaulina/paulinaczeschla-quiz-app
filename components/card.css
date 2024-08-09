@@ -42,14 +42,14 @@
   cursor: pointer;
 }
 
-.card .bookmark img {
+.card .bookmark .bookmark-icon {
   width: 30px;
   height: 24px;
   margin: 0;
   padding: 0;
 }
 
-.card-question {
+.card .bookmark img .card-question {
   padding: 0;
   margin-top: 10px;
   margin-bottom: 25px;
