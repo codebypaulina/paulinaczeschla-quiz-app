@@ -7,7 +7,7 @@
   cursor: pointer;
   margin-bottom: 30px;
   background-color: lightgray;
-  color: black;
+  color: rgba(0, 0, 0, 0.671);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
@@ -16,14 +16,13 @@
   color: whitesmoke;
 }
 
-.card-answer {
-  display: none;
-  margin: 0;
-  padding: 0;
-}
+/****************************************************************************
+/ answer is hidden. clicking on the answer-button shows the answer (only CSS)
 
 .button--show-answer:focus + .card-answer {
   display: block;
   margin-top: 0;
   margin-bottom: 10px;
 }
+
+****************************************************************************/

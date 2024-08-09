@@ -10,6 +10,8 @@ darkModeButton.addEventListener("click", () => {
   bodyElement.classList.toggle("dark");
 });
 
+----------------------------------------------------> WIESO BLOCKT DARK MODE DIE FOLGENDEN EVENTLISTENER?
+
 /***************************************************************************/
 
 /****************************** BOOKMARK ICON ******************************/
@@ -30,3 +32,16 @@ bookmarkButton.addEventListener("click", () => {
 /***************************************************************************/
 
 /****************************** ANSWER BUTTON ******************************/
+
+const answerButton = document.querySelector('[data-js="answer-button"]');
+const answerText = document.querySelector('[data-js="card-answer"]');
+
+answerButton.addEventListener("click", () => {
+  if (answerText.classList.contains("hidden")) {
+    answerText.classList.remove("hidden");
+    answerButton.textContent = "hide answer";
+    return;
+  }
+  answerText.classList.add("hidden");
+  answerButton.textContent = "show answer";
+});

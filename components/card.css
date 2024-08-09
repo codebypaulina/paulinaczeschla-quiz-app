@@ -18,7 +18,7 @@
   justify-content: center;
 }
 
-.card {
+.cards .card {
   list-style-type: none;
   border: solid 1px #666666;
   border-radius: 15px;
@@ -46,21 +46,21 @@
   width: 30px;
   height: 24px;
   margin: 0;
-  padding: 0;
 }
 
-.card .bookmark img .card-question {
-  padding: 0;
-  margin-top: 10px;
-  margin-bottom: 25px;
+.card .card-question {
+  margin: 10px 0 25px 0;
   color: #666666;
 }
 
-.card-answer {
-  margin-top: 30px;
-  padding-bottom: 25px;
+.card .card-answer {
+  margin: 0 0 30px 0;
   color: #666666;
   font-weight: 500;
+}
+
+.hidden {
+  display: none;
 }
 
 .card .categories {
@@ -68,11 +68,10 @@
   display: flex;
   justify-content: flex-start;
   padding: 0px 10px 0 5px;
-  margin: 0;
   flex-wrap: wrap;
 }
 
-.categories li {
+.card .categories li {
   margin-right: 6px;
   margin-bottom: 4px;
   border: solid 0.5px black;
@@ -83,8 +82,4 @@
   background-color: black;
   color: lightcoral;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.hidden {
-  display: none;
 }
