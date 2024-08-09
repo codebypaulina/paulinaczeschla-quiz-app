@@ -1,11 +1,11 @@
 const bodyElement = document.querySelector('[data-js="body"]');
 
-const buttonDarkMode = document.querySelector('[data-js="button-dark-mode"]');
-const sliderDarkMode = document.querySelector('[data-js="slider"]');
+const darkModeButton = document.querySelector('[data-js="button-dark-mode"]');
+const darkModeSlider = document.querySelector('[data-js="slider"]');
 
-buttonDarkMode.addEventListener("click", () => {
-  buttonDarkMode.classList.toggle("active");
-  sliderDarkMode.classList.toggle("active");
+darkModeButton.addEventListener("click", () => {
+  darkModeButton.classList.toggle("active");
+  darkModeSlider.classList.toggle("active");
   bodyElement.classList.toggle("dark");
   console.log("Button clicked!");
 });
