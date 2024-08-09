@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App | Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="./index.js" defer></script>
+  </head>
+
+  <body data-js="body">
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+
+    <main role="main">
+      <div class="h2-container">
+        <h2>ADD YOUR OWN QUESTIONS</h2>
+      </div>
+
+      <section class="">
+        <!-- brauch ich hier ne class? -->
+        <form action="">
+          <fieldset>
+            <label for="your-question">Your question: </label>
+            <textarea
+              id="your-question"
+              name=""
+              minlength=""
+              maxlength=""
+              placeholder="..."
+            ></textarea>
+
+            <label for="your-answer">Your answer:</label>
+            <textarea
+              id="your-answer"
+              name=""
+              minlength=""
+              maxlength=""
+              placeholder="..."
+            ></textarea>
+
+            <label for="tag">Tag:</label>
+            <input id="tag" type="text" placeholder="..." />
+          </fieldset>
+
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer" role="footer">
+      <nav class="footer-nav" role="navigation">
+        <ul>
+          <li>
+            <a href="index.html">
+              <img
+                src="./img/home_white.png"
+                alt="home icon"
+                role="home"
+                aria-label="switch to home"
+            /></a>
+          </li>
+
+          <li>
+            <a href="bookmarks.html">
+              <img
+                src="./img/bookmark_white.png"
+                alt="bookmark icon"
+                role="bookmarks"
+                aria-label="switch to bookmarks"
+            /></a>
+          </li>
+
+          <li>
+            <a href="form.html">
+              <img
+                src="./img/plus_black.png"
+                alt="create cards icon"
+                role="create cards"
+            /></a>
+          </li>
+
+          <li>
+            <a href="profile.html">
+              <img
+                src="./img/profile_white.png"
+                alt="profile icon"
+                role="profile"
+                aria-label="switch to profile"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

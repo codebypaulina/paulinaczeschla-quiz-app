@@ -10,7 +10,7 @@ darkModeButton.addEventListener("click", () => {
   bodyElement.classList.toggle("dark");
 });
 
-----------------------------------------------------> WIESO BLOCKT DARK MODE DIE FOLGENDEN EVENTLISTENER?
+----------------------------------------------------> WIESO BLOCKT DARK MODE FOLGENDE(N) EVENTLISTENER?
 
 /***************************************************************************/
 
@@ -45,3 +45,5 @@ answerButton.addEventListener("click", () => {
   answerText.classList.add("hidden");
   answerButton.textContent = "show answer";
 });
+
+/***************************************************************************/
