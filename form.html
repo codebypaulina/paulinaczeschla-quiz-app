@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App | Home</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="./index.js" defer></script>
+    <script src="./form.js" defer></script>
+    <!-- hier bisher nur eine js-file! -->
   </head>
 
   <body data-js="body">
@@ -19,13 +20,14 @@
       </div>
 
       <section class="">
-        <!-- brauch ich hier ne class? -->
-        <form action="">
+        <!-- brauch ich hier ne class? ist hier section sinnvoll? -->
+        <form action="" data-js="form">
+          <!-- action? -->
           <fieldset>
-            <label for="your-question">Your question: </label>
+            <label for="your-question">Your question:</label>
             <textarea
               id="your-question"
-              name=""
+              name="question"
               minlength=""
               maxlength=""
               placeholder="..."
@@ -34,18 +36,21 @@
             <label for="your-answer">Your answer:</label>
             <textarea
               id="your-answer"
-              name=""
+              name="answer"
               minlength=""
               maxlength=""
               placeholder="..."
             ></textarea>
 
             <label for="tag">Tag:</label>
-            <input id="tag" type="text" placeholder="..." />
+            <input id="tag" type="text" name="tag" placeholder="..." />
           </fieldset>
 
           <button type="submit" class="submit-button">Submit</button>
         </form>
+        <div class="question-container">
+          <ul data-js="new-card-container" class="cards"></ul>
+        </div>
       </section>
     </main>
 
