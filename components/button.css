@@ -16,6 +16,7 @@
 .submit-button:hover {
   background-color: lightcoral;
   color: whitesmoke;
+  transition: 0.4s ease;
 }
 
 /****************************************************************************

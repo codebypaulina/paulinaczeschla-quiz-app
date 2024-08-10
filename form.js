@@ -21,13 +21,13 @@ form.addEventListener("submit", (event) => {
   const liElementCard = document.createElement("li");
   liElementCard.classList.add("card");
 
-  const bookmarkButton = document.createElement("button");
+  const bookmarkButton = document.createElement("button"); // ---------------------- BUTTON
   bookmarkButton.classList.add("bookmark");
   bookmarkButton.setAttribute("aria-label", "bookmark this question");
   bookmarkButton.setAttribute("data-js", "bookmark-button"); // data-js nötig?
   liElementCard.appendChild(bookmarkButton);
 
-  const bookmarkIcon = document.createElement("img");
+  const bookmarkIcon = document.createElement("img"); // ------------------------- BOOKMARK
   bookmarkIcon.src = "./img/bookmark.png";
   bookmarkIcon.alt = "bookmark icon";
   bookmarkIcon.classList.add("bookmark-icon");
