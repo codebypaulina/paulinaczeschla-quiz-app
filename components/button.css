@@ -1,6 +1,6 @@
 .button--show-answer,
 .submit-button {
-  border: solid 1px lightgrey;
+  border: none;
   border-radius: 13px;
   padding: 10px 14px;
   font-size: 0.8rem;

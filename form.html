@@ -28,22 +28,36 @@
             <textarea
               id="your-question"
               name="question"
-              minlength=""
-              maxlength=""
+              minlength="4"
+              maxlength="150"
               placeholder="..."
+              data-js="input-question"
             ></textarea>
+            <small class="character-count"
+              >[ <span data-js="amount-left-question"></span> characters left ]
+            </small>
 
             <label for="your-answer">Your answer:</label>
             <textarea
               id="your-answer"
               name="answer"
-              minlength=""
-              maxlength=""
+              minlength="4"
+              maxlength="150"
               placeholder="..."
+              data-js="input-answer"
             ></textarea>
+            <small class="character-count"
+              >[ <span data-js="amount-left-answer"></span> characters left ]
+            </small>
 
             <label for="tag">Tag:</label>
-            <input id="tag" type="text" name="tag" placeholder="..." />
+            <input
+              id="tag"
+              type="text"
+              name="tag"
+              placeholder="..."
+              maxlength="30"
+            />
           </fieldset>
 
           <button type="submit" class="submit-button">Submit</button>
