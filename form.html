@@ -6,7 +6,6 @@
     <title>Quiz App | Home</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="./form.js" defer></script>
-    <script src="./index.js" defer></script>
     <!-- hier bisher nur eine js-file! -->
   </head>
 
@@ -33,6 +32,7 @@
               maxlength="150"
               placeholder="..."
               data-js="input-question"
+              required
             ></textarea>
             <small class="character-count"
               >[ <span data-js="amount-left-question"></span> characters left ]
@@ -46,6 +46,7 @@
               maxlength="150"
               placeholder="..."
               data-js="input-answer"
+              required
             ></textarea>
             <small class="character-count"
               >[ <span data-js="amount-left-answer"></span> characters left ]
@@ -75,7 +76,7 @@
           <li>
             <a href="index.html">
               <img
-                src="./img/home_white.png"
+                src="./img/home_transparent.png"
                 alt="home icon"
                 role="home"
                 aria-label="switch to home"
@@ -85,7 +86,7 @@
           <li>
             <a href="bookmarks.html">
               <img
-                src="./img/bookmark_white.png"
+                src="./img/bookmark_transparent.png"
                 alt="bookmark icon"
                 role="bookmarks"
                 aria-label="switch to bookmarks"
@@ -95,7 +96,7 @@
           <li>
             <a href="form.html">
               <img
-                src="./img/plus_black.png"
+                src="./img/plus_filled.png"
                 alt="create cards icon"
                 role="create cards"
             /></a>
@@ -104,7 +105,7 @@
           <li>
             <a href="profile.html">
               <img
-                src="./img/profile_white.png"
+                src="./img/profile_transparent.png"
                 alt="profile icon"
                 role="profile"
                 aria-label="switch to profile"

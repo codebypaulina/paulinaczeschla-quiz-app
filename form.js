@@ -13,6 +13,12 @@ form.addEventListener("submit", (event) => {
 
   console.log(data);
 
+  // ----------- CATEGORIES: add # first ----------- //
+  if (!data.tag.startsWith("#")) {
+    data.tag = "#" + data.tag;
+  }
+  // ----------------------------------------------- //
+
   const question = data.question;
   const answer = data.answer;
   const tag = data.tag;
@@ -62,6 +68,8 @@ form.addEventListener("submit", (event) => {
   ulElementCategories.appendChild(categoryItem);
 
   newCardContainer.appendChild(liElementCard);
+
+  form.reset();
 });
 
 /*******************************************************************************/

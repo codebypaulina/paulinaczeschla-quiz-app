@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App | Profile</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="./index.js" defer></script>
+    <script src="./profile.js" defer></script>
+    <!-- hier bisher nur eine js-file! -->
   </head>
 
   <body data-js="body">
@@ -23,16 +24,25 @@
           class="profile-picture"
           aria-label="profile picture"
         />
-        <!--------------  NAME -------------->
+        <!---------------- NAME ---------------->
         <h2>Paulina Czeschla</h2>
         <!-------------- ABOUT ME -------------->
-        <div class="about-me">
+        <div class="about-me" data-js="about-me">
           <h3>About me</h3>
           <p class="profile-description" aria-label="description about me">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Necessitatibus repellendus illo at cumque dolores qui architecto
-            deleniti officia voluptatibus, error quisquam dolorum debitis eius
-            est explicabo totam? Ad, quaerat perspiciatis!
+            I just wanted to update this, but I can't really come up with
+            anything good right now and I don't have much time for it because I
+            have to finish the rest of the settings. So I just try to make it
+            look like there's something really interesting in here.
+          </p>
+          <ul class="profile-description-list">
+            Maybe I should add some key points:
+            <li>beach vacation</li>
+            <li>beer</li>
+            <li>sleep</li>
+          </ul>
+          <p class="profile-description">
+            Yes, I would be very happy about that now.
           </p>
         </div>
 
@@ -40,9 +50,11 @@
         <ul class="status">
           <li class="icon-questions">
             <img
-              src="./img/question.png"
+              src="./img/question_black.png"
               alt="answered questions"
               aria-label="answered questions"
+              class="icon-questions-img"
+              data-js="icon-questions-img"
             />
             <span>8</span>
           </li>
@@ -52,13 +64,14 @@
               src="./img/bookmark_filled.png"
               alt="bookmarked questions"
               aria-label="bookmarked questions"
+              data-js="icon-bookmarks-img"
             />
             <span>2</span>
           </li>
         </ul>
 
         <!-------------- SETTINGS CONTAINER -------------->
-        <div class="settings-container">
+        <div class="settings-container" data-js="settings">
           <h3>Settings</h3>
           <div class="settings-dark-mode-container">
             <p>Dark Mode</p>
@@ -76,7 +89,7 @@
           <li>
             <a href="index.html"
               ><img
-                src="./img/home_white.png"
+                src="./img/home_transparent.png"
                 alt="home icon"
                 role="home"
                 aria-label="switch to home"
@@ -85,7 +98,7 @@
           <li>
             <a href="bookmarks.html">
               <img
-                src="./img/bookmark_white.png"
+                src="./img/bookmark_transparent.png"
                 alt="bookmark icon"
                 role="bookmarks"
                 aria-label="switch to bookmarks"
@@ -94,7 +107,7 @@
           <li>
             <a href="form.html">
               <img
-                src="./img/plus_white.png"
+                src="./img/plus_transparent.png"
                 alt="create icon"
                 role="create cards"
                 aria-label="switch to create cards"
@@ -103,7 +116,7 @@
           <li>
             <a href="profile.html">
               <img
-                src="./img/profile_black.png"
+                src="./img/profile_filled.png"
                 alt="profile icon"
                 role="profile"
             /></a>
